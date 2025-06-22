@@ -5,15 +5,19 @@
   font-family: 'Inter', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #f4f4f9;
+  background: #fff8e1;
   color: #333;
   line-height: 1.6;
 }
 
 header {
-  background: linear-gradient(to right, #000000, #333333);
-  color: white;
+  background: linear-gradient(to right, #f6c90e, #fbd85d);
+  color: #333;
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -23,23 +27,32 @@ header h1 {
 }
 
 nav {
-  background-color: white;
+  background-color: #fffdf0;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: #444;
+  color: #f6c90e;
   font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e0ac00;
 }
 
 section {
   padding: 3rem 1rem;
   max-width: 1100px;
   margin: auto;
+  scroll-margin-top: 100px;
 }
 
 #work-gallery {
@@ -52,14 +65,14 @@ section {
 .work-item {
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .work-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.1);
 }
 
 .work-item img {
@@ -78,11 +91,11 @@ section {
 }
 
 #services {
-  background-color: #ffffff;
+  background-color: #fff4cc;
   margin-top: 2rem;
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.03);
 }
 
 #services ul {
@@ -92,19 +105,20 @@ section {
 
 #services li {
   padding: 0.5rem 0;
+  font-size: 1.1rem;
 }
 
 #contact {
-  background-color: #000;
-  color: white;
+  background: #f6c90e;
+  color: #333;
   padding: 2rem 1rem;
   border-radius: 12px;
   text-align: center;
 }
 
 footer {
-  background: #222;
-  color: #ccc;
+  background: #f0b400;
+  color: #fffbe7;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
