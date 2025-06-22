@@ -15,6 +15,11 @@ body {
   line-height: 1.6;
 }
 
+body.dark-mode {
+  background: #181818;
+  color: #f6c90e;
+}
+
 header {
   background: linear-gradient(to right, #f6c90e, #fbd85d);
   color: #333;
@@ -48,11 +53,29 @@ nav a:hover {
   color: #e0ac00;
 }
 
+body.dark-mode nav {
+  background-color: #222;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+body.dark-mode nav a {
+  color: #f6c90e;
+}
+
+body.dark-mode nav a:hover {
+  color: #fff4cc;
+}
+
 section {
   padding: 3rem 1rem;
   max-width: 1100px;
   margin: auto;
   scroll-margin-top: 100px;
+}
+
+body.dark-mode section {
+  background: none;
+  color: #f6c90e;
 }
 
 #work-gallery {
@@ -90,12 +113,23 @@ section {
   padding: 1rem;
 }
 
+body.dark-mode #work-gallery .work-item {
+  background: #232323;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
 #services {
   background-color: #fff4cc;
   margin-top: 2rem;
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+}
+
+body.dark-mode #services {
+  background-color: #222;
+  color: #f6c90e;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 #services ul {
@@ -116,10 +150,20 @@ section {
   text-align: center;
 }
 
+body.dark-mode #contact {
+  background: #232323;
+  color: #f6c90e;
+}
+
 footer {
   background: #f0b400;
   color: #fffbe7;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+}
+
+body.dark-mode footer {
+  background: #222;
+  color: #f6c90e;
 }
